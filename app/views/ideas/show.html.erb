@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <td>Author</td>
+    <td>Description</td>
+    <td>Created</td>
+    <td>Updated</td>
+  </tr>
+  <tr>
+    <td><%= @idea_by_id.author%></td>
+    <td><%= @idea_by_id.description %></td>
+    <td><%= @idea_by_id.created_at %></td>
+    <td><%= @idea_by_id.updated_at %></td>
+    <td><%= link_to "delete", @idea_by_id, :method => :delete, :confirm => "Are you sure?"%></td>
+    <td><a href="/idea/edit">edit</a></td>
+  </tr>
+</table>

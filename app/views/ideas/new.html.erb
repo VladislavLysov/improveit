@@ -1,0 +1,15 @@
+<%= form_for :idea, url: ideas_path do |i|  %>
+    <table>
+      <tr>
+        <td>Author</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td><%= i.text_field :author %></td>
+        <td><%= i.text_field :description %></td>
+      </tr>
+      <tr>
+        <%= i.submit 'Save your idea' %>
+      </tr>
+    </table>
+<% end %>
